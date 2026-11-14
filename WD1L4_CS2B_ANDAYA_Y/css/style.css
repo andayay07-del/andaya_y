@@ -1,0 +1,42 @@
+/* CSS Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+   }
+
+h1, h2 {
+    color: #300763;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: #f0eef3;
+}
+
+th, td {
+    border: 2px solid #300763;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #6b4caf;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4cafaf;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #278282;
+}
+
+#result {
+    margin-top: 20px;
+}
