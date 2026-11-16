@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Setting up the Charset -->
+    <meta charset="UTF-8">
+    <!-- Setting up the Page Author -->
+    <meta name="author" content="Y ANDAYA">
+    <!-- Setting up the Page Refresh to 30 Seconds -->
+    <meta http-equiv="refresh" content="30">
+    <!-- Setting up the Viewport [dynamic scaling] -->
+     <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Tables and Lists</title>
+    <link rel="icon" type="image/x-icon" href="../image/plushie.webp"> <!--Favicon-->
+
+    <!--CSS-->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Favicon</h1>
+    <p>Icon on the left of the Tab/Title (Favorite Icon)</p>
+    <!-- Accepted (.ico[bits], .png, .jpeg, .svg, .gif, .jpg, .webp)-->
+
+    <h1>Tables</h1>
+        <hr>
+        <h2>table, th (table head), td (table data), tr (table row)</h2>
+        <h2>Groupings: thead, tbody, tfoot</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Student Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+
+            <tbody> 
+                <!--Colspan (expand horizontally), Rowspand (expand vertically)-->
+                <tr>
+                    <!-- <td rowspan="3">1</td> row 2 and 3 shift to the right, 1 takes the whole column-->
+                    <!-- <td colspan="3">1</td> the following items will shift to the right, 1 takes 3 row spaces -->
+                    <td>1</td>
+                    <td>Gorio</td>
+                    <td>22</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Gonzalo</td>
+                    <td>18</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Jay Nagwapo</td>
+                    <td>36</td>
+                    <td>N/A</td>
+                    <td>Hello</td> <!--table shift/grows to accomodate-->
+                    <td></td> <!--empty on table-->
+                </tr>
+            </tbody>
+        </table>
+
+    <h1>Lists</h1>
+        <h2>Grocery Items</h2>
+        <ol> <!--Ordered List (Numeric)-->
+            <li>Shampoo</li>
+            <li>Saba</li> <!--List Item-->
+            <li>Matcha</li>
+        </ol>
+
+        <h2>Farm</h2>
+        <ul> <!--Unordered List <Bullets)-->
+            <li>Giraffe</li>
+            <li>Baka</li>
+            <li>Gako</li>
+        </ul>
+        
+        <h2>Description</h2>
+        <dl> <!--Description List-->
+            <dt>Aircon</dt> <!--Description Term-->
+            <dd>- Air Conditioning</dd> <!--Description Details (indented)-->
+            <dt>ISP</dt>
+            <dd>- Internet Service Provider</dd>
+        </dl>
+        
+    <h1>Buttons</h1>
+        <!--Regular button/Not connected to a function-->
+        <button>Regular Button</button>
+        <!--Grayed out; cannot be interacted with-->
+        <button disabled>Disabled</button>
+        <!--Has onclick property, displays a pop up-->
+        <button onclick="alert('This is an example of onclick.')">Try me</button> 
+        <!--alert() is a js prompt-->
+
+    <h1>Media</h1>
+        <h3>Images, Video, Audio</h3>
+        <!--Measurements: px(fixed, ABSOLUTE), %(dynamic scaling, changes size to fit screen/browser size)-->
+        <img src="../image/plushie.webp" width="20%"> <br><br>
+        <!--gif also works-->
+        <img src="../image/scuba.gif" width="20%"> <br><br>
+
+        
+        <!--Controls is important! nothing shows without-->
+        <!--Default controls: play, volume control slider, playback speed, progress/seek bar-->
+        <audio src="../audio/morena.mp3" controls></audio><br><br>
+        <!--Autoplays, automatic start-->
+        <video src="../video/dreamer.mp4" width="20%" controls autoplay></video> <br><br>
+        <!--Without controls, it is like an image-->
+        <!--Default controls: play button, progress bar, volume control slider, playback speed, picture in picture-->
+        <video src="../video/dreamer.mp4" width="20%" controls></video> <br><br>
+
+    <h1>Links</h1>
+        <h3>Links: Text, Button, Image</h3>
+         <!--blue and underlined-->
+        <a href="../pages/index_p4.html">Follow next page</a> <br>
+        <!--document.location is a javascript property used to redirect the browser to another webpage-->
+        <button onclick="document.location = '../pages/index_p4.html'">Next Page</button> <br>
+        <a href="../pages/index_p4.html">
+            <img src="../image/airi.jpg" width="200px"> <!--fixed size image-->
+        </a>
+</body>
+</html>
