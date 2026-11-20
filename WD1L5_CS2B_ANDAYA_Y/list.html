@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GroceryKo - Grocery List</title>
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <section id="grocerySection">
+            <h2>Grocery Item List</h2>
+
+            <!-- Input fields -->
+            <label>Item Name</label> <br>
+            <input type="text" id="item_name"> <br>
+
+            <label>Quantity</label> <br>
+            <input type="number" id="item_qty"> <br> <br>
+
+            <!-- Buttons to add and clear items in the list -->
+            <div class="button-container">
+                <button onclick="addItem()" class="list-btn">Add Item</button>
+                <button onclick="clearList()" class="list-btn">Clear List</button>
+            </div>
+
+            <hr>
+
+            <!-- Make a grocery item list -->
+            <h2>ANG LISTAAN</h2>
+
+            <ul id="groceryList">
+            </ul>
+        </section>
+
+        <!-- Implement JavaScipt -->
+        <script src="js/list.js"></script>
+    </body>
+</html>
